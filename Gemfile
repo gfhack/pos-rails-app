@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.11.1'
 # Use sqlite3 as the database for Active Record
@@ -26,6 +25,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'mini_racer', '~> 0.2.6'
 
 gem 'bootstrap', '~> 4.3.1'
+
+gem 'simple_form', '~> 3.5', '>= 3.5.1'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
