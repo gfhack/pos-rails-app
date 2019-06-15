@@ -2,34 +2,18 @@
   <%= t('listing', name: t('contact.title', count: 1)) %>
 </h1>
 
-<table class="table table-striped table-hover">
+<div class="card">
+  <%= image_tag(@contact.avatar_url, class: 'card-img-top') if @contact.avatar? %>
 
-  <tr>
-    <thead>
-      <th scope="row">
-        <%= t('contact.name') %>:
-      </th>
-    </thead>
-    <tbody>
-      <td>
-        <%= @contact.name %>
-      </td>
-    </tbody>
- </tr>
-  <tr>
-    <thead>
-      <th scope="row">
-        <%= t('contact.birthday') %>:
-      </th>
-    </thead>
-    <tbody>
-      <td>
-        <%= @contact.birthday %>
-      </td>
-    </tbody>
- </tr>
-
-</table>
-
-<%= link_to t('edit'), edit_contact_path(@contact), class: 'btn btn-primary', role: :button %>
-<%= link_to t('index'), contacts_path, class: 'btn btn-outline-secondary', role: :button %>
+  <div class="card-body">
+    <h5 class="card-title">
+      <%= @contact.name %>
+    </h5>
+    <p>
+      <%= @contact.birthday %>
+    </p>
+    
+    <%= link_to t('edit'), edit_contact_path(@contact), class: 'btn btn-primary', role: :button %>
+    <%= link_to t('index'), contacts_path, class: 'btn btn-outline-secondary', role: :button %>
+  </div>
+</div>

@@ -36,6 +36,8 @@ gem 'will_paginate', '~> 3.1', '>= 3.1.7'
 
 gem 'will_paginate-bootstrap', git: 'https://github.com/benitkibabu/will_paginate-bootstrap'
 
+gem 'carrierwave', '~> 1.3', '>= 1.3.1'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
