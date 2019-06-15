@@ -1,9 +1,20 @@
 pt-BR:
   index: Principal
-  listing: Listagem
+  listing: Listando %{name}
+  editing: Editando
   show: Exibir
   destroy: Remover
   edit: Editar
+  new: Novo %{name}
   contact:
+    title:
+      zero: Contato
+      one: Contato
+      other: Contatos
     name: Nome
     birthday: Nascimento
+  simple_form:
+    labels:
+      contact:
+        name: Nome
+        birthday: Nascimento
