@@ -1,0 +1,9 @@
+pt-BR:
+  index: Principal
+  listing: Listagem
+  show: Exibir
+  destroy: Remover
+  edit: Editar
+  contact:
+    name: Nome
+    birthday: Nascimento
